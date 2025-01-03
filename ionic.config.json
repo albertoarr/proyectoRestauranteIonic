@@ -1,0 +1,7 @@
+{
+  "name": "proyectoRestauranteIonic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
