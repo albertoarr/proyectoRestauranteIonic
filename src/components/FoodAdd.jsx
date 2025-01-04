@@ -6,7 +6,7 @@ const FoodAdd = ({ foods, handleIncrease, handleDecrease }) => {
   return (
     <div>
       <IonList>
-        {foods.map((food) => (
+        {foods.map((food) => ( // Se recorre el array para completar todos los elementos
           <IonItem key={food.id}>
             <div>
               {/* Botón de sumar */}

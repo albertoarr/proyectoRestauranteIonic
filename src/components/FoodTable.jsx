@@ -15,7 +15,7 @@ const FoodTable = ({ foods, price }) => {
         </thead>
 
         <tbody>
-          {foods.map((food) => (
+          {foods.map((food) => ( // Recorriendo el array para generar la tabla
             <tr key={food.id}>
               <td><IonText>{food.name}</IonText></td>
               <td><IonText>{`$${food.price.toFixed(2)}`}</IonText></td>

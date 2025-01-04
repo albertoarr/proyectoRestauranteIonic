@@ -23,7 +23,7 @@ function RestaurantContainer() {
     { id: 6, name: "Sopa", image: "sopa.png", price: 1, quantity: 0 },
     { id: 7, name: "Postre", image: "postre.png", price: 1.5, quantity: 0 },
   ]);
-
+  // State que se usa en para calcular el precio actual del programa
   const [price, setPrice] = useState(0);
 
   // Función flecha para incrementar la cantidad de un alimento
@@ -46,7 +46,7 @@ function RestaurantContainer() {
     );
   };
 
-  // Función flecha para reiniciar las cantidades a 0
+  // Función flecha para reiniciar las cantidades a 0 (botón Limpiar)
   const clearFoodState = () => {
     setFoods(
       foods.map((food) => ({
@@ -86,7 +86,7 @@ function RestaurantContainer() {
         doc.text(
           `${index + 1}. ${food.name}: Cantidad: ${
             food.quantity
-          } - Precio: €${(food.quantity * food.price).toFixed(2)}`,
+          } - Precio: ${(food.quantity * food.price).toFixed(2)}€`,
           10,
           y //Posición en la que se escribe ".text(texto, pos)"
         );
@@ -94,7 +94,7 @@ function RestaurantContainer() {
       });
 
     // Agregar precio total
-    doc.text(`Precio Total: €${price.toFixed(2)}`, 10, y + 10);
+    doc.text(`Precio Total: ${price.toFixed(2)}€`, 10, y + 10);
 
     // Guardar el archivo PDF
     doc.save("detalles_compra.pdf");
