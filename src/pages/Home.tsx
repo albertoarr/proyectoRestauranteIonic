@@ -10,6 +10,7 @@ const Home: React.FC = () => {
   /**
    * Función flecha que mediante un atributo personalizado que llamo 
    * "data-theme" para cambiar al tema de color claro u oscuro.
+   * (Estos cambios se ven reflejados en "variables.css")
    */
   const toggleDarkMode = () => {
     const root = document.documentElement; // Obtiene el elemento <html>
@@ -24,13 +25,11 @@ const Home: React.FC = () => {
     setIsDarkMode(!isDarkMode); // Cambia el booleano del tema de color
 };
 
-
-
   return (
     <IonPage>
       <IonToolbar>
         <IonButton onClick={toggleDarkMode}>
-           <IonText>Modo Oscuro</IonText>
+           <IonText>{isDarkMode ? 'Modo Claro' : 'Modo Oscuro'}</IonText>
         </IonButton>
       </IonToolbar>
 

@@ -8,4 +8,12 @@ ion-toolbar {
 
 ion-button {
   font-size: 15px; /* Tamaño del texto */
+  font-weight: bolder; /* En negritas */
+}
+
+ion-content {
+  display: flex; /* Usamos flexbox */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+  height: 100%; /* Asegura que ocupe toda la altura disponible */
 }

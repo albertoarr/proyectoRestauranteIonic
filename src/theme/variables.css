@@ -1,20 +1,41 @@
 /* Modo Claro (por defecto) */
 :root {
-    --ion-background-color: #ffffff;
-    --ion-text-color: #000000;
-    --ion-color-primary: #3880ff;
-    --ion-color-secondary: #3dc2ff;
-    --ion-toolbar-background: #abc;
-    --ion-toolbar-color: #000000;
-  }
-  
-  /* Modo Oscuro */
-  [data-theme='dark'] {
-    --ion-background-color: #121212;
-    --ion-text-color: #ffffff;
-    --ion-color-primary: #bb86fc;
-    --ion-color-secondary: #03dac6;
-    --ion-toolbar-background: #cbd;
-    --ion-toolbar-color: #ffffff;
-  }
-  
+    /* Fondo principal de la aplicación (pantalla de fondo) */
+    --ion-background-color: #ffffff; 
+    
+    /* Color del texto principal */
+    --ion-text-color: #202124; 
+    
+    /* Color principal para botones, enlaces, etc. */
+    --ion-color-primary: #6200ea; 
+    
+    /* Color secundario para elementos secundarios, como botones secundarios */
+    --ion-color-secondary: #03dac6; 
+    
+    /* Fondo de la barra de herramientas (barra superior) */
+    --ion-toolbar-background: #d1d1d1; 
+    
+    /* Color del texto en la barra de herramientas */
+    --ion-toolbar-color: #202124; 
+}
+
+/* Modo Oscuro (utiliza el atributo data-theme) */
+[data-theme='dark'] {
+    /* Fondo principal de la aplicación en modo oscuro */
+    --ion-background-color: #121212; 
+    
+    /* Color del texto principal en modo oscuro  */
+    --ion-text-color: #e8eaed; 
+    
+    /* Color principal para botones, enlaces, etc., adaptado para el modo oscuro */
+    --ion-color-primary: #bb86fc; 
+    
+    /* Color secundario para elementos secundarios, como botones secundarios, en modo oscuro */
+    --ion-color-secondary: #03dac6; 
+    
+    /* Fondo de la barra de herramientas en modo oscuro */
+    --ion-toolbar-background: #333333; 
+    
+    /* Color del texto en la barra de herramientas en modo oscuro */
+    --ion-toolbar-color: #ffffff; 
+}
