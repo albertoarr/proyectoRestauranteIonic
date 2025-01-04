@@ -1,27 +1,25 @@
 /* Asegúrate de que el contenedor de la lista ocupe todo el ancho disponible */
 .ion-list {
-    width: 100%; /* La lista debe ocupar todo el ancho */
-    padding: 0; /* Elimina el padding por defecto */
-  }
-  
-  /* Estilo de la imagen y la cantidad */
-  .food-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-  }
-  
-  .food-item img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 25px;
-  }
-  
-  .food-item span {
-    font-size: 18px;
-    font-weight: bold;
-    margin-right: 10px;
-  }
-  
-  
+  width: 100%; /* La lista debe ocupar todo el ancho */
+  padding: 0; /* Elimina el padding por defecto */
+}
+
+/* Estilo de la imagen y la cantidad */
+.food-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.food-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 25px;
+}
+
+.food-item span {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}

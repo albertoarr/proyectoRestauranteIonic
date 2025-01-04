@@ -1,0 +1,29 @@
+/* Estilos generales para las tablas */
+table {
+  margin: 5% auto;
+  width: 90%;
+}
+
+table ion-text {
+  font-size: 20px;
+  margin: 10px;
+}
+
+th {
+  border: 1px solid;
+}
+
+td {
+  text-align: left;
+  border: 1px solid;
+}
+
+
+table.no-border td {
+  border: none; /* Elimina los bordes */
+  font-size: 18px; 
+  font-weight: bolder; 
+  padding: 10px 15px; /* Espacio interno para hacerlo más bonito */
+}
+
+
