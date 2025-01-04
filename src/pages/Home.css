@@ -1,0 +1,11 @@
+ion-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --ion-background-color: var(--ion-background-color);
+  padding: 10px;
+}
+
+ion-button {
+  font-size: 15px; /* Tamaño del texto */
+}
